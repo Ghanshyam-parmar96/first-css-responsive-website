@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar flex">
+            <div class="icon">
+                <img src="./assets/hambrger.png">
+            </div>
+            <ul class="nav-list flex">
+                <li><a class="home" href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="hambrgerMenu">
+            <ul class="flex">
+                <li><a class="home" href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container flex">
+            <div class="left-hero-section">
+                <h2><img class="hand-image" src="./assets/waving-hand.png" alt="hand image"> Hi Everyone</h2>
+                <h1>Mark Anderson</h1>
+                <h2 class="developerFontColor">Developor</h2>
+            </div>
+            <div class="right-hero-section flex">
+                <img class="main-image" src="./assets/pc-image.png" alt="Main images">
+            </div>
+        </div>
+
+        <section>
+            <div class="project flex">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="image-gallery">
+                <div class="box flex"><img src="./assets/image.png" alt="poject galler">Project-1</div>
+                <div class="box flex"><img src="./assets/image.png" alt="poject galler">Project-2</div>
+                <div class="box flex"><img src="./assets/image.png" alt="poject galler">Project-3</div>
+                <div class="box flex"><img src="./assets/image.png" alt="poject galler">Project-4</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="project flex">
+                <h2>Contact Me</h2>
+                <div class="underline un-width"></div>
+            </div>
+
+            <div class="contectMe flex">
+                <div><img class="contectMe-image" src="./assets/github.png" alt="github"></div>
+                <div><img class="contectMe-image" src="./assets/linkedin.png" alt="linkedin"></div>
+                <div><img class="contectMe-image outlook" src="./assets/outlook.png" alt="outlook"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        const hambrger = document.querySelector(".icon img")
+        const menu = document.querySelector(".hambrgerMenu")
+        hambrger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        })
+    </script>
+
+
+</body>
+
+</html>
